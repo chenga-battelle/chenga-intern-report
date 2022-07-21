@@ -58,7 +58,7 @@ One drawback is that we would need to use another action (can most likely use th
 
 
 
-## Bug Fix - Binary build of CUBE CLI from Github Actions to set version properly
+## Binary build of CUBE CLI from Github Actions to set version properly
 
 ### Overview
 
@@ -78,7 +78,7 @@ Note: I found out that the action/checkout action only retrieves the latest comm
 
 
 
-## Feature request - set-local-env script in CUBE platform to check that script user is an Azure AD Global Administrator in the tenant.
+## set-local-env script in CUBE platform to check that script user is an Azure AD Global Administrator in the tenant.
 
 ### Overview
 
@@ -94,7 +94,7 @@ I used the Microsoft Graph API to retrieve a list of userIDs of the global admin
 
 
 
-## Documentation - adding documentation for cube-cli-download script
+## adding documentation for cube-cli-download script
 
 ### Overview
 
@@ -108,7 +108,7 @@ I added content to our super-train site documenting the new cube-cli-download sc
 
 
 
-## Documentation - make it look more good
+## make it look more good
 
 ### Overview
 
