@@ -1,8 +1,8 @@
-# Albert Cheng Summer 2022 Intern Report
+# Albert Cheng - Summer 2022 Intern Report
 
-Providing overview and documentation of the various projects I was able to help with during the summer.
+Providing overviews and documentation of the various projects I was able to help with during the summer.
 
-## Table of Contents
+## Projects/Tasks
 1. [Onboarding Documentation Rework](#onboarding-documentation-rework)
     1. [Content Edits](#content-edits)
     2. [Documentation Restructing](#documentation-restructuring---proposed-solution-overview)
