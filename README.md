@@ -1,11 +1,11 @@
 # Albert Cheng Summer 2022 Intern Report
 
-Providing overview and documentation of the various tasks I was able to help with during the summer.
+Providing overview and documentation of the various projects I was able to help with during the summer.
 
 ## Table of Contents
 1. [Onboarding Documentation Rework](#onboarding-documentation-rework)
     1. [Content Edits](#content-edits)
-    2. [Documentation Restructing](#documentation-restructuring-proposed-solution-overview)
+    2. [Documentation Restructing](#documentation-restructuring---proposed-solution-overview)
 2. [Proper Versioning for CUBE CLI release](#bug-fix---binary-build-of-cube-cli-from-github-actions-to-set-version-properly)
 3. [Add Global Admin Check in set-local-env](#feature-request---set-local-env-script-in-cube-platform-to-check-that-script-user-is-an-azure-ad-global-administrator-in-the-tenant)
 4. [Adding Documentation for cube-cli-download Script](#documentation---adding-documentation-for-cube-cli-download-script)
@@ -14,6 +14,7 @@ Providing overview and documentation of the various tasks I was able to help wit
 
 
 ## Onboarding Documentation Rework
+
 
 
 ### Content Edits
@@ -30,11 +31,11 @@ I was able to help update and rework some of the Getting Started/Accounts and Ac
 
 #### Details
 
-Detailed personal documentation during my onboarding as well as the couple other opportunities to set up a qb VDI from scratch informed the content edits I was able to make. Nothing too crazy, just updating some sections, revising some out-of-date links, and adding a couple of sections (notably: Git LFS, Windows Remote Desktop, WSL)
+Detailed personal documentation during my onboarding as well as the couple other opportunities to set up a qb VDI from scratch informed the content edits I was able to make. Nothing too crazy, just updating some sections, revising some out-of-date links, and adding a couple of new sections (notably: Git LFS, Windows Remote Desktop, WSL)
 
 
 
-### Documentation Restructuring Proposed Solution Overview
+### Documentation Restructuring - Proposed Solution Overview
 
 #### Overview
 
@@ -56,6 +57,7 @@ Proposed solution would be to have this [Github action](https://github.com/cheng
 One drawback is that we would need to use another action (can most likely use the same one) to also grab the root repo readmes.
 
 
+
 ## Bug Fix - Binary build of CUBE CLI from Github Actions to set version properly
 
 ### Overview
@@ -75,20 +77,32 @@ Emulated code I saw in local-build-install script to grab output from ```git des
 Note: I found out that the action/checkout action only retrieves the latest commit which would give me a bad output since the full tag history wasn't cloned. I fixed this issue by adjusting the fetch-depth option in the action flag.
 
 
+
 ## Feature request - set-local-env script in CUBE platform to check that script user is an Azure AD Global Administrator in the tenant.
 
 ### Overview
 
+Some of the commands outputted by the set-local-env script need the user to be a global administrator in the tenant. I added code to the script's pre-flight checklist that checks to see if the logged in user is a global administrator in the current tenant.
+
 ### Linked PRs/Issues/Commits
 
+- [#83 - added checks for global admin role](https://github.com/battelle-cube/cube-platform/pull/83)
+
 ### Details
+
+I used the Microsoft Graph API to retrieve a list of userIDs of the global administrators in the tenant. I then used a JMES function to check if the current user's ID is a part of the list.
+
 
 
 ## Documentation - adding documentation for cube-cli-download script
 
 ### Overview
 
+I added content to our super-train site documenting the new cube-cli-download script.
+
 ### Linked PRs/Issues/Commits
+
+[#155 - Add TODO for download script documentation](https://github.com/battelle-cube/cube-program/pull/155)
 
 ### Details
 
@@ -98,7 +112,11 @@ Note: I found out that the action/checkout action only retrieves the latest comm
 
 ### Overview
 
+This is an open draft pull request. I removed two obsolete commits through an interactive rebase and kept the one relevant commit in the branch.
+
 ### Linked PRs/Issues/Commits
+
+[#145 - Make it look more good](https://github.com/battelle-cube/cube-program/pull/145)
 
 ### Details
 
