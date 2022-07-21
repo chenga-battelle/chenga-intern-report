@@ -25,6 +25,7 @@ I was able to help update and rework some of the Getting Started/Accounts and Ac
 
 #### Linked PRs/Issues/Commits
 
+battelle-cube/cube-program
 - [#144 - content edits](https://github.com/battelle-cube/cube-program/pull/144)
 - [#138 - updating supertain documentation](https://github.com/battelle-cube/cube-program/pull/138)
 - a selection of commits directly to main (first on 05/23/2022)
@@ -43,8 +44,11 @@ Proposed a solution for workflow and structuring of all repository documenation 
 
 #### Linked PRs/Issues/Commits
 
+chenga-battelle
 - [new-documentation repo](https://github.com/chenga-battelle/new-documentation)
     - "source" repo emulating a repository in battelle-cube with documentation that we want to push onto the cube program site
+
+battellecube
 - [hugo-tutorial repo](https://github.com/battellecube/hugo-tutorial)
     - hugo static site emulating cube program site
 
@@ -66,6 +70,7 @@ The binary build of CUBE CLI from the GitHub actions created release doesn't ver
 
 ### Linked PRs/Issues/Commits
 
+battelle-cube/cube-cli
 - [#215 - Tag release](https://github.com/battelle-cube/cube-cli/pull/215)
     - see this PR for a demo of the original issue.
 - [#216 - not tagging release version properly](https://github.com/battelle-cube/cube-cli/pull/216)
@@ -86,6 +91,7 @@ Some of the commands outputted by the set-local-env script need the user to be a
 
 ### Linked PRs/Issues/Commits
 
+battelle-cube/cube-platform
 - [#83 - added checks for global admin role](https://github.com/battelle-cube/cube-platform/pull/83)
 
 ### Details
@@ -102,6 +108,7 @@ I added content to our super-train site documenting the new cube-cli-download sc
 
 ### Linked PRs/Issues/Commits
 
+battelle-cube/cube-program
 [#155 - Add TODO for download script documentation](https://github.com/battelle-cube/cube-program/pull/155)
 
 ### Details
@@ -116,6 +123,7 @@ This is an open draft pull request. I removed two obsolete commits through an in
 
 ### Linked PRs/Issues/Commits
 
+battelle-cube/cube-program
 [#145 - Make it look more good](https://github.com/battelle-cube/cube-program/pull/145)
 
 ### Details
